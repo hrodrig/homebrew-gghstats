@@ -15,7 +15,7 @@ export GGHSTATS_GITHUB_TOKEN=ghp_xxx
 gghstats serve
 ```
 
-Open <http://localhost:8080>.
+Open <http://localhost:8080> to try the UI. For a **server deployment** (Compose, TLS, observability), use **[gghstats-selfhosted](https://github.com/hrodrig/gghstats-selfhosted)** — not a long-running install from Homebrew alone.
 
 ## Links
 
@@ -23,12 +23,6 @@ Open <http://localhost:8080>.
 - **Releases:** [gghstats releases](https://github.com/hrodrig/gghstats/releases)
 - **Self-hosted (Compose / Helm):** [gghstats-selfhosted](https://github.com/hrodrig/gghstats-selfhosted)
 
-## Automatic cask updates
+## Cask updates
 
-On each **gghstats** release (`v*` tag on `main`), GoReleaser commits an updated `Casks/gghstats.rb` here when the **gghstats** repo has the Actions secret **`HOMEBREW_TAP_TOKEN`** (PAT with `contents:write` on this repository). The release workflow fails if the secret is missing.
-
-```bash
-gh secret set HOMEBREW_TAP_TOKEN --repo hrodrig/gghstats
-```
-
-Use the same classic or fine-grained PAT as for [homebrew-pgwd](https://github.com/hrodrig/homebrew-pgwd) if it includes write access to **both** tap repos.
+`Casks/gghstats.rb` is updated when a new **gghstats** release is published on GitHub (`v*` tag on `main`).
