@@ -25,4 +25,10 @@ Open <http://localhost:8080>.
 
 ## Automatic cask updates
 
-On each **gghstats** release (`v*` tag on `main`), GoReleaser can commit an updated cask here when the **gghstats** repo has the Actions secret `HOMEBREW_TAP_TOKEN` (PAT with `contents:write` on this repository).
+On each **gghstats** release (`v*` tag on `main`), GoReleaser commits an updated `Casks/gghstats.rb` here when the **gghstats** repo has the Actions secret **`HOMEBREW_TAP_TOKEN`** (PAT with `contents:write` on this repository). The release workflow fails if the secret is missing.
+
+```bash
+gh secret set HOMEBREW_TAP_TOKEN --repo hrodrig/gghstats
+```
+
+Use the same classic or fine-grained PAT as for [homebrew-pgwd](https://github.com/hrodrig/homebrew-pgwd) if it includes write access to **both** tap repos.
