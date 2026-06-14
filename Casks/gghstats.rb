@@ -4,12 +4,12 @@ cask "gghstats" do
 
   on_macos do
     on_intel do
-      sha256 "158b68210090af56d1c1afc6c098e5f7b027082c7f5049959d1890dff19430e3"
+      sha256 "d1622a8a54e24a8c1cafc94e610358af12438e115e8b328b023d7ba8dc5f9c89"
       url "https://github.com/hrodrig/gghstats/releases/download/v#{version}/gghstats_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/hrodrig/gghstats/"
     end
     on_arm do
-      sha256 "17661ac2445f4411ff573737344fb4d775cdd6b950e45c111fd1f06dedf7b90e"
+      sha256 "9f43543897e06bcd76ac71f16cf03a50765bea1092eae864b5f703e701cbe234"
       url "https://github.com/hrodrig/gghstats/releases/download/v#{version}/gghstats_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/hrodrig/gghstats/"
     end
@@ -17,12 +17,12 @@ cask "gghstats" do
 
   on_linux do
     on_intel do
-      sha256 "f9655603db8958f49fd41bfdc8bf69312e6b4ec540f7f19035e1e307ffd27091"
+      sha256 "0db53c3c33f7a3ea85eb89fdd46c2a7089bd0945c8bcf9c99963d563318c6833"
       url "https://github.com/hrodrig/gghstats/releases/download/v#{version}/gghstats_#{version}_linux_amd64.tar.gz",
         verified: "github.com/hrodrig/gghstats/"
     end
     on_arm do
-      sha256 "ded155600aef352cbff81f71b285dfe222d8ca2d42c5610258763e523e3ecb75"
+      sha256 "f97fdf83020f211d8abe6df81e2f9aa05d0fe0d9ff59c098032d93620fe8a3f1"
       url "https://github.com/hrodrig/gghstats/releases/download/v#{version}/gghstats_#{version}_linux_arm64.tar.gz",
         verified: "github.com/hrodrig/gghstats/"
     end
